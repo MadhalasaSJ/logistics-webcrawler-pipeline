@@ -1,13 +1,37 @@
-# Ignore virtual environment
+# Ignore virtual environment folders
 cvenv/
 venv/
+airflow_venv/
+airflowenv/
 
 # Ignore Python cache files
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Ignore environment files
+# Ignore environment variables
 .env
 
 # Ignore data if uploading full
 data/
+
+# Ignore Airflow metadata and SQLite DB files
+airflow_home/
+airflow_logs/
+airflow.db
+unittest.cfg
+
+# Ignore Docker artifacts
+*.log
+docker-compose.override.yml
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+
+# Ignore other temp files
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
